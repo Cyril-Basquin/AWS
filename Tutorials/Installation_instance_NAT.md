@@ -22,8 +22,13 @@ Tutorial to configurate an instance NAT on AWS
   TYPE  PROTOCOL  Port  IP  
   HTTP  TCP       80    10.10.11.0/24  
   SSH   TCP       22    10.10.0.0/16  
-  HTTPS TCP       443   10.10.11.0/24    
-
+  HTTPS TCP       443   10.10.11.0/24  
+|TYPE |PROTOCOL| Port |IP           |  
+|-----|--------|------|-------------|  
+|HTTP |   TCP  | 80   |10.10.11.0/24|  
+|SSH  |   TCP  | 22   |10.10.0.0/16 |  
+|HTTPS|   TCP  | 443  |10.10.11.0/24|    
+  
 ## Outbond rules
   TYPE  PROTOCOL  Port  IP  
   HTTP  TCP       80    0.0.0.0/0  
