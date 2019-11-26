@@ -29,6 +29,9 @@ Tutorial to configurate an instance NAT on AWS
   HTTP  TCP       80    0.0.0.0/0  
   HTTPS TCP       443   0.0.0.0/0  
 
+### Instance creation
+Create an AMI NAT  instance on linux OS, activate(something)
+
 
 ### with the transfer tool of PuTTy (pscp), transfer the file key from local to the appropriate <b>file<b> in the remote ec2.
 pscp -i c:\Users\breto\Desktop\DSTI\Week_6_AWS\First_putty_key.ppk c:\Users\breto\Desktop\DSTI\Week_6_AWS\AWS_key_pair.pem ec2-user@54.227.120.127:/home/ec2-user/.ssh/id_rsa
