@@ -20,9 +20,9 @@ Tutorial to configurate an instance NAT on AWS
 ### NAT Security Group
 ## Inbound rules
   TYPE  PROTOCOL  Port  IP  
-  HTTP  TCP       80    10.10.11.0/24
-  SSH   TCP       22    10.10.0.0/16   
-  HTTPS TCP       443   10.10.11.0/24   
+  HTTP  TCP       80    10.10.11.0/24  
+  SSH   TCP       22    10.10.0.0/16  
+  HTTPS TCP       443   10.10.11.0/24    
 
 ## Outbond rules
   TYPE  PROTOCOL  Port  IP  
