@@ -25,7 +25,7 @@ Tutorial to configurate an instance NAT on AWS
   HTTPS TCP       443   10.10.11.0/24    
 
 |TYPE |PROTOCOL|Port|IP|  
-|-----|--------|------|-------------|  
+|-----|:--------:|------|-------------|  
 |HTTP|TCP|80|10.10.11.0/24|  
 |SSH|TCP|22|10.10.0.0/16 |  
 |HTTPS|TCP|443|10.10.11.0/24|    
