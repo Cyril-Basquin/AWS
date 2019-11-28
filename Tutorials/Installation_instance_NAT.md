@@ -1,5 +1,6 @@
 Tutorial to configurate an instance NAT on AWS
 ===================================
+# Work in process => not Networking  
 
 ## Objectifs:
 ### Create a VPC (10.10.0.0/16) with:
