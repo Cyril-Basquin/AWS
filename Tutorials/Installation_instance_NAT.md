@@ -33,12 +33,12 @@ Tutorial to configurate an instance NAT on AWS
   |HTTPS|TCP|443|0.0.0.0/0 |   
 
 #### Instance creation
-Create an AMI NAT  instance on linux OS, activate(something)
+Create an AMI NAT  instance on linux OS, actions => Networking => Change source/dest check => Disable
 
 
 #### with the transfer tool of PuTTy (pscp), transfer the file key from local to the appropriate <b>file<b> in the remote ec2.
-pscp -i c:\Users\breto\Desktop\DSTI\Week_6_AWS\First_putty_key.ppk c:\Users\breto\Desktop\DSTI\Week_6_AWS\AWS_key_pair.pem ec2-user@54.227.120.127:/home/ec2-user/.ssh/id_rsa
-  
+pscp -i c:\Users\breto\Desktop\DSTI\IT_stuff\AWS\First_putty_key.ppk c:\Users\breto\Desktop\DSTI\IT_stuff\AWS\AWS_key_pair.pem ec2-user@54.227.120.127:/home/ec2-user/.ssh/id_rsa
+
 
 #### Connection in the public instance (ssh, PuTTy)
 Connection to the public instance
@@ -46,6 +46,9 @@ Connection to the public instance
 
 #### From the public instance, allow readability of the key
 chmod 400 ~/.ssh/id_rsa  
+
+#### You can check the accessibility of file with:
+ls -l
 
 #### Connection to the private instance using ssh
 ssh -i /home/ec2-user/.ssh/id_rsa/AWS_key_pair.pem ec2-user@10.10.11.35
