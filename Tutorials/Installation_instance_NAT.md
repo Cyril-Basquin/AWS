@@ -2,6 +2,9 @@ Tutorial to configurate an instance NAT on AWS
 ===================================
 # Work in process => not Networking  
 
+Why we can't connect via the NAT instance?
+
+
 ## Objectifs:
 ### Create a VPC (10.10.0.0/16) with:
   - 1 publics subnet: (10.10.1.0/24)
@@ -18,20 +21,21 @@ Tutorial to configurate an instance NAT on AWS
   - Target: local             Destination: 10.10.0.0/16 (VPC)
   - Target: nat-instance-id   Destination: 0.0.0.0/0
 
-#### NAT Security Group
+#### NAT Security Group (names NAT_SG)
 ### Inbound rules
 |TYPE |PROTOCOL|Port|IP|  
 |:-----:|:--------:|:------:|:-------------:|  
-|HTTP|TCP|80|10.10.11.0/24|  
 |SSH|TCP|22|10.10.0.0/16 |  
-|HTTPS|TCP|443|10.10.11.0/24|  
 
-### Outbond rules
+#### Public Security Group
+|TYPE |PROTOCOL|Port|IP|  
+|:-----:|:--------:|:------:|:-------------:|  
+|SSH|TCP|22|NAT_SG |  
 
-  |TYPE |PROTOCOL|Port|IP|  
-  |:-----:|:--------:|:------:|:----------:|  
-  |HTTP|TCP|80|0.0.0.0/0|  
-  |HTTPS|TCP|443|0.0.0.0/0 |   
+#### Private Security Group
+|TYPE |PROTOCOL|Port|IP|  
+|:-----:|:--------:|:------:|:-------------:|  
+|SSH|TCP|22|NAT_SG |  
 
 #### Instance creation
 Create an AMI NAT  instance on linux OS, actions => Networking => Change source/dest check => Disable
@@ -45,8 +49,8 @@ pscp -i c:\Users\breto\Desktop\DSTI\IT_stuff\AWS\First_putty_key.ppk c:\Users\br
 Connection to the public instance
 
 
-#### From the public instance, allow readability of the key
-chmod 400 ~/.ssh/id_rsa  
+#### In the public instance, allow readability only of the key
+chmod 400 key.pem  
 
 #### You can check the accessibility of file with:
 ls -l
