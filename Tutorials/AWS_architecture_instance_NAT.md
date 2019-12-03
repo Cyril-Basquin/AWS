@@ -11,7 +11,7 @@ Tutorial to configurate an instance NAT on AWS
 
 
 ## Security Group : Principle
-The three security groups have to be configure according to the schema as follow:
+The three security groups have to be configure according to the schema:  
 The Jump-box security group have to:
   - receive ssh from internet Gateway
   - send ssh to the jump box
