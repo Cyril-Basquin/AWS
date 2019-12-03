@@ -1,6 +1,9 @@
 Tutorial to configurate an instance NAT on AWS
 ===================================
 
+![Architecture](https://github.com/Cyril-Basquin/AWS/blob/master/Tutorials/Images/VPC_with_NAT_instance_JumpBox_FI.png)
+
+
 1. ### Objectifs:
 ### Create a VPC (10.10.0.0/16) with:
   - 1 publics subnet: (10.10.1.0/24)
