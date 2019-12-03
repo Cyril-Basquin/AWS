@@ -9,15 +9,6 @@ Tutorial to configurate an instance NAT on AWS
   - 1 publics subnet: (10.10.1.0/24)
   - 1 private subnet: (10.10.11.0/24)
 
-### Routes Tables configuration::
-#### Main Route Table (Public subet):
-  - Target: local              Destination: 10.10.0.0/16 (VPC)
-  - Target: Internet Gateway   Destination: 0.0.0.0/0
-
-#### Private Route Table (Private subnet):
-  - Target: local             Destination: 10.10.0.0/16 (VPC)
-  - Target: nat-instance-id   Destination: 0.0.0.0/0
-
 
 ## Security Group : Principle
 The three security groups have to be configure according to the schema as follow:
@@ -71,3 +62,6 @@ ls -l
 
 #### Connection to the private instance using ssh
 ssh -i /home/ec2-user/.ssh/id_rsa/AWS_key_pair.pem ec2-user@10.10.11.35
+
+
+https://docs.aws.amazon.com/fr_fr/vpc/latest/userguide/VPC_NAT_Instance.html
