@@ -1,9 +1,12 @@
- # Formatage au format MarkDown  
+ # MarkDown  
 
  # \# Title 1  
  ### \#\#\# Title 3
  ##### \#\#\#\#\# Title 5
 normal
+
+*\*Italics\**
+
 
 
 
