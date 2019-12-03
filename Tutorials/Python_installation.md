@@ -30,3 +30,5 @@ pip install boto3
 
 # Start python
 python
+
+https://towardsdatascience.com/amazon-rds-step-by-step-guide-14f9f3087d28
