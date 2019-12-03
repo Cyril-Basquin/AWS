@@ -1,4 +1,4 @@
-<p style="text-align: center;">Markdown</p>
+<p align= "center">Markdown</p>
 <p style="text-align: center;"># Markdown</p>
 
 <p style="text-align: center;">\<p style="text-align: center;">Centered text\</p> </p>
