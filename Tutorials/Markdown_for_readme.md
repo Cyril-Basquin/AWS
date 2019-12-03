@@ -5,9 +5,10 @@
  ##### \#\#\#\#\# Title 5
 normal
 
-*\*Italics\** or _\_Italic\__
-**\*\*bold\*\*** or __\_\_bold\_\___
-**_\*\*\_Italics and bold\_\*\*_**  
+*\*Italics\** or _\_Italic\__  
+**\*\*bold\*\*** or __\_\_bold\_\___  
+**_\*\*\_Italics and bold\_\*\*_** or __*\_\_\*Italics and bold\*\_\_*__
+~~\~\~strikethrough text\~\~~~
 
 
 
