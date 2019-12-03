@@ -1,11 +1,7 @@
 Tutorial to configurate an instance NAT on AWS
 ===================================
-# Work in process => not Networking  
 
-Why we can't connect via the NAT instance?
-
-
-## Objectifs:
+1. ### Objectifs:
 ### Create a VPC (10.10.0.0/16) with:
   - 1 publics subnet: (10.10.1.0/24)
   - 1 private subnet: (10.10.11.0/24)
