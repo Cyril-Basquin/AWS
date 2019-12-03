@@ -10,8 +10,6 @@ Why we can't connect via the NAT instance?
   - 1 publics subnet: (10.10.1.0/24)
   - 1 private subnet: (10.10.11.0/24)
 
-
-
 ### Routes Tables configuration::
 #### Main Route Table (Public subet):
   - Target: local              Destination: 10.10.0.0/16 (VPC)
@@ -20,6 +18,23 @@ Why we can't connect via the NAT instance?
 #### Private Route Table (Private subnet):
   - Target: local             Destination: 10.10.0.0/16 (VPC)
   - Target: nat-instance-id   Destination: 0.0.0.0/0
+
+
+## Security Group : Principle
+The three security groups have to be configure according to the schema as follow:
+The Jump-box security group have to:
+  - receive ssh from internet Gateway
+  - send ssh to the jump box
+
+The FI security group have to:
+  - receive ssh from the jump-box
+  - send http/https request to the NAT instances
+
+The NAT instance have to:
+  - receive http/https request from the FI
+  - send http/https request through the Internet Gateway.
+
+Note: When you access to the FI, you are connected to it through the jump-box. If you deactivate the Jump-box, you lose the connection with the FI.
 
 #### NAT Security Group (names NAT_SG)
 ### Inbound rules
