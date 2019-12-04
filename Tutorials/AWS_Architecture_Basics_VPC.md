@@ -25,6 +25,6 @@
         + Name it comprehensively (RT_Public_subnet)
         + Attach it to your VPC
     + RT configuration with the IG  
-\# In *Route Tables*, select it go to __*Routes*__  ==> __*Edit routes*__ ==> __*Add route*__
-    + In destination, write 0.0.0.0/0
-    + In target, selection *Internet Gateway*, then your IG
+\# In *Route Tables*, select your RT then go to __*Routes*__  ==> __*Edit routes*__ ==> __*Add route*__
+        + In destination, write 0.0.0.0/0
+        + In target, select *Internet Gateway*, then your IG
