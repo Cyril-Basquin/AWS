@@ -1,5 +1,8 @@
 ### Fast Start of an AWS VPC
 
+![VPC_Basics](https://github.com/Cyril-Basquin/AWS/blob/master/Tutorials/Images/Basics_VPC.png)
+
+
 1. Create a VPC
     + Give it a comprehensive name (VPC_with_NAT_instance_JumpBox_FI)
     + Choose a IPv4 CIDR of at least 16 bytes (10.0.0.0/16)
