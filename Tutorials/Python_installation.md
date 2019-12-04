@@ -1,8 +1,8 @@
-### Protocol to install and start python3 on an EC2-instance
+### Protocol to install and start python3 with virtual environnement on an EC2-instance
 
 
 **\# At the creation of your EC2 instance, launch this script**    
-  
+
 \#!/bin/bash  
 sudo yum update -y  
 sudo yum install python3 -y   
