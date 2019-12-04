@@ -22,8 +22,8 @@
 
 4. Route Table (RT)
   + Create a new RT
-      + Name it comprehensively (RT_Public_subnet)
-      + Attach it to your VPC
+    + Name it comprehensively (RT_Public_subnet)
+    + Attach it to your VPC
   + RT configuration with the IG  
 \# In *Route Tables*, select your RT then go to __*Routes*__  ==> __*Edit routes*__ ==> __*Add route*__
     + In destination, write 0.0.0.0/0
