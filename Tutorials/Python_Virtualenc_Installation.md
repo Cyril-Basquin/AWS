@@ -25,3 +25,11 @@ pip install boto3
 
 **\# Start python**  
 python  
+
+
+### With Ubuntu (ami-04b9e92b5572fa0d1)
+As it is already install, you don't need to install python3
+After the Update:  
+sudo apt-get instal virtualenv  
+
+then continue normally

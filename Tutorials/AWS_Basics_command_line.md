@@ -16,9 +16,12 @@ Otherwise you can use:
 ssh -i c:\User\The\full\path\to\your\folder ec2-user@xxx.xxx.xxx.xxx
 
 **Alternative: use PuTTy**
-  
+
 #### Transfer files to your instance
 
 scp -i key.pem file_that_you_want_to_transfer.txt ec2-user@xxx.xxx.xxx.xxx:rename_your_file_if_you_want.txt
 
 **Alternative: use WinSCP**
+
+#### Display a file 
+cat file
