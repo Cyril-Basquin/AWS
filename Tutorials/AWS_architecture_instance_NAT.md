@@ -4,12 +4,12 @@
 
 
 ### VPC Architecture
-    + 1 VPC
-    + 2 Subnet
-        + 1 Private
-        + 1 Public
-    + 2 Route Table (1 for each subnet)
-    + 1 Internet Gateway (Attached to the Public Route Table)
+  + 1 VPC
+  + 2 Subnet
+      + 1 Private
+      + 1 Public
+  + 2 Route Table (1 for each subnet)
+  + 1 Internet Gateway (Attached to the Public Route Table)
 
 
 ### EC2 instance (& NAT instance)
