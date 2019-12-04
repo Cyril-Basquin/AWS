@@ -19,6 +19,8 @@ Start 2 "basic" EC2 instance (ex: ami-00068cd7555f543d5)
 Start 1 NAT-instance using an existing AMI (ex: ami-00a9d4a05375b2763)  
     + In the *Public subnet* with an IP  
 
+Note: for the NAT-instance, select it then actions => Networking => Change source/dest check => Disable
+
 
 ### Security Group
 The three security groups (one for each instance) have to be configure according to the schema:  
@@ -38,10 +40,6 @@ NAT instance have to:
 
 
 Note: When you access to the FI, you are connected to it through the jump-box. If you deactivate the Jump-box, you lose the connection with the FI.
-
-
-### Instance creation
-Create an AMI NAT  instance on linux OS, actions => Networking => Change source/dest check => Disable
 
 
 ### with the transfer tool of PuTTy (pscp), transfer the file key from local to the appropriate <b>file<b> in the remote ec2.  
