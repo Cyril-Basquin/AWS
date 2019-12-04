@@ -25,6 +25,9 @@ jupyter notebook --ip=0.0.0.0
 **Copy paste the given URL**  
 http://ip-10-10-10-10:8888/?token=.....  
 
+
+![Jupyter_token](https://github.com/Cyril-Basquin/AWS/blob/master/Tutorials/Images/ubuntu_jupyter_get_token.png)
+
 Paste it in your browser  
 
 Change the IP with the one of your EC2  

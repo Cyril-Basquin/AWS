@@ -8,7 +8,7 @@ Fast Start of an AWS VPC
 + Create an IG
 + Attach it to your VPC
 
-3. Create a subnet (or 2: 1 public and 1 private)
+3. Create a subnet
 + Name it comprehensively (Public_Subnet)
 + Link it to an existing VPC
 + Choose a Availability Zone (AZ)
