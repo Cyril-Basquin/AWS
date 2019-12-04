@@ -41,26 +41,26 @@ The three security groups (one for each instance) have to be configure according
 
 Note: When you access to the FI, you are connected to it through the jump-box. If you deactivate the Jump-box, you lose the connection with the FI.
 
+### Access to the Final Instance
+**Transfer the access key to the Jump-Box**  
+Note: xxx.xxx.xxx.xxx is the (elastic)IP of your EC2
+Note: you can use the full path _c:\Users\Username\your\path_  
+        or go in the folder where the key is and use the local path
 
-##### Tranfer the access key to the Jump-Box  
-**Note: xxx.xxx.xxx.xxx is the (elastic)IP of your EC2**
-**Note: you can use the full path _c:\Users\Username\your\path_  
-        or go in the folder where the key is and use the local path**
-
-scp -i key.pem key.pem ec2-user@xxx.xxx.xxx.xxx:key.pem
-
-
-
-##### Connection to the Jump-Box
-ssh -i key.pem ec2-user@xxx.xxx.xxx.xxx
+``scp -i key.pem key.pem ec2-user@xxx.xxx.xxx.xxx:key.pem``
 
 
-##### In the Jump-Box, allow readability only of the key
+
+**Connection to the Jump-Box**
+``ssh -i key.pem ec2-user@xxx.xxx.xxx.xxx``
+
+
+**In the Jump-Box, allow readability only of the key**
 ``chmod 400 key.pem``
 
 
-##### Connection to the Final instance (from the JB)
-```ssh -i /home/ec2-user/.ssh/id_rsa/AWS_key_pair.pem ec2-user@10.10.11.35```
+**Connection to the Final instance (from the JB)**  
+``ssh -i /home/ec2-user/.ssh/id_rsa/AWS_key_pair.pem ec2-user@10.10.11.35``
 
 
 https://docs.aws.amazon.com/fr_fr/vpc/latest/userguide/VPC_NAT_Instance.html
