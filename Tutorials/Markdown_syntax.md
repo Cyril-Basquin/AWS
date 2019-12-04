@@ -1,27 +1,37 @@
-<p align= "center"> Markdown </p>
+double space at the end of a phrase: line end  
+double return: line break   
 
-<p style="text-align: center">def 456</p>
-<p align="center">centered?</p>
 
  # \# Title 1  
  ### \#\#\# Title 3
  ##### \#\#\#\#\# Title 5
 normal
 
+
 *\*Italics\** or _\_Italic\__  
 **\*\*bold\*\*** or __\_\_bold\_\___  
 **_\*\*\_Italics and bold\_\*\*_** or __*\_\_\*Italics and bold\*\_\_*__  
 \~\~~~strikethrough text~~\~\~  
 
+
 Next line: 2 spaces  
- 1. \1\. Order 1
- .1 Suborder
- ..1 Sub order
- * \* & space
- - \- & space
- + \+ & space
- / \/ & space
- ** \*\* & space
+1. \1\. Order 1  
+  1. Tab & \1\. Order 2  
+    1. Tab & Tab & \1\. Order 3  
+ * \* & space  
+ - \- & space  
+ + \+ & space  
+
+
+* \* & space    
+  * Tab & \* & space  
+    * Tab & Tab & \* & space  
+      * Tab & Tab & Tab & \* & space  
+
+\![a_file_name](http:/url-adress-of-the-image)
+
+
+
 
 
 
