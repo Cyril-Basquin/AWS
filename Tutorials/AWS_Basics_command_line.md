@@ -11,7 +11,7 @@ For an ubuntu AMI:
 
 Note: key.pem is the Access key of your instance.  
 Note: This command implies that your are located in the folder where you key is:  
-``$ cd c:\\Wher\ever\you\put\the\key``
+``$ cd c:\Wher\ever\you\put\the\key``
 
 Otherwise you can use:  
 ``$ ssh -i c:\The\full\path\to\your\key.pem ec2-user@xxx.xxx.xxx.xxx``
