@@ -3,7 +3,7 @@
 Once you created an EC2 instance, to access it through the command prompt  
 xxx.xxx.xxx.xxx is the IP provided by AWS  
 
-**For a Linux 2 AMI (=CentOs)**  
+**For a Linux 2 AMI (=CentOs)**   
 ssh -i key.pem ec2-user@xxx.xxx.xxx.xxx  
 
 **For an ubuntu AMI:**  
@@ -23,5 +23,5 @@ scp -i key.pem file_that_you_want_to_transfer.txt ec2-user@xxx.xxx.xxx.xxx:renam
 
 **Alternative: use WinSCP**
 
-#### Display a file 
+#### Display a file.
 cat file
