@@ -1,7 +1,7 @@
 ## Tutorial to configurate a network with a private network and a NAT instance on AWS
-===================================
 
 ![Architecture](https://github.com/Cyril-Basquin/AWS/blob/master/Tutorials/Images/VPC_with_NAT_instance_JumpBox_FI.png)
+
 
 ### VPC Architecture
     + 1 VPC
