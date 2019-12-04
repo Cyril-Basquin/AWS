@@ -25,6 +25,8 @@ jupyter notebook --ip=0.0.0.0
 **Copy paste the given URL**  
 http://ip-10-10-10-10:8888/?token=.....  
 
+https://github.com/Cyril-Basquin/AWS/blob/master/Tutorials/Images/ubuntu_jupyter_get_token.png
+
 
 ![Architecture](https://github.com/Cyril-Basquin/AWS/blob/master/Tutorials/Images/ubuntu_jupyter_get_token.png)  
 Paste it in your browser  
@@ -40,3 +42,6 @@ sudo apt-get install python3-pip -y
 sudo pip3 install jupyter
 
 jupyter notebook --ip=0.0.0.0
+
+
+### If you quit Putty/Command prompt, Jupyter Notebook is not accessible anymore
