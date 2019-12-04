@@ -44,19 +44,19 @@ Note: When you access to the FI, you are connected to it through the jump-box. I
 
 ### Access to the Final Instance
 **Transfer the access key to the Jump-Box**  
-Note: xxx.xxx.xxx.xxx is the (elastic)IP of your EC2
+Note: xxx.xxx.xxx.xxx is the (elastic)IP of your EC2  
 Note: you can use the full path _c:\Users\Username\your\path_  
-        or go in the folder where the key is and use the local path
+or go in the folder where the key is and use the local path
 
 ``scp -i key.pem key.pem ec2-user@xxx.xxx.xxx.xxx:key.pem``
 
 
 
-**Connection to the Jump-Box**
+**Connection to the Jump-Box**  
 ``ssh -i key.pem ec2-user@xxx.xxx.xxx.xxx``
 
-
-**In the Jump-Box, allow readability only of the key**
+  
+**In the Jump-Box, allow readability only of the key**  
 ``chmod 400 key.pem``
 
 
