@@ -1,4 +1,4 @@
-#### Access to your instance with SSH
+### Access to your instance with SSH
 
 Once you created an EC2 instance, to access it through the command prompt  
 (xxx.xxx.xxx.xxx is the IP provided by AWS)  
@@ -18,13 +18,15 @@ Otherwise you can use:
 
 Alternative: use PuTTy
 
-#### Transfer files to your instance
+
+### Transfer files to your instance
 
 ``$ scp -i key.pem file_that_you_want_to_transfer.txt ec2-user@xxx.xxx.xxx.xxx:rename_your_file_if_you_want.txt``
 
 Alternative: use WinSCP
 
-#### Folder and file access
+
+### Folder and file access
 ``
 ls
 pwd
