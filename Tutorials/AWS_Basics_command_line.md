@@ -4,7 +4,7 @@ Once you created an EC2 instance, to access it through the command prompt
 xxx.xxx.xxx.xxx is the IP provided by AWS  
 
 **For a Linux 2 AMI (=CentOs)**   
-ssh -i key.pem ec2-user@xxx.xxx.xxx.xxx  
+```ssh -i key.pem ec2-user@xxx.xxx.xxx.xxx```
 
 **For an ubuntu AMI:**  
 ssh -i key.pem ubuntu@xxx.xxx.xxx.xxx  
