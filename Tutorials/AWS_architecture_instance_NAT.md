@@ -3,7 +3,21 @@ Tutorial to configurate a network with a private network and a NAT instance on A
 
 ![Architecture](https://github.com/Cyril-Basquin/AWS/blob/master/Tutorials/Images/VPC_with_NAT_instance_JumpBox_FI.png)
 
+## VPC Architecture
+    + 1 VPC
+    + 2 Subnet
+        + 1 Private
+        + 1 Public
+    + 2 Route Table (1 for each subnet)
+    + 1 Internet Gateway (Attached to the Public Route Table)
+
+
 ## EC2 instance (& NAT instance)
+Start 2 "basic" EC2 instance (ex: ami-00068cd7555f543d5)
+    + 1 instance in the *Public subnet* with an IP
+    + 1 instance in the *Private subnet* (no IP)
+Start 1 NAT-instance using an existing AMI (ex: ami-00a9d4a05375b2763)
+    + In the *Public subnet* with an IP
 
 ## Security Group
 The three security groups (one for each instance) have to be configure according to the schema:  
