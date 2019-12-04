@@ -13,11 +13,11 @@
 
 
 ### EC2 instance (& NAT instance)
-Start 2 "basic" EC2 instance (ex: ami-00068cd7555f543d5)
-    + 1 instance in the *Public subnet* with an IP
-    + 1 instance in the *Private subnet* (no IP)
-Start 1 NAT-instance using an existing AMI (ex: ami-00a9d4a05375b2763)
-    + In the *Public subnet* with an IP
+Start 2 "basic" EC2 instance (ex: ami-00068cd7555f543d5)  
+    + 1 instance in the *Public subnet* with an IP  
+    + 1 instance in the *Private subnet* (no IP)  
+Start 1 NAT-instance using an existing AMI (ex: ami-00a9d4a05375b2763)  
+    + In the *Public subnet* with an IP  
 
 
 ### Security Group
