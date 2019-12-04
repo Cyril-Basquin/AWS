@@ -2,6 +2,11 @@
 
 ##### Ubuntu AMI used: ami-04b9e92b5572fa0d1
 
+**NOTE:** to connect to your Ubuntu EC-2 instance  
+ssh -i key.pem ubuntu@xxx.xxx.xxx.xxx
+
+
+##### Connect to your instance
 **Update Ubuntu**  
 sudo apt-get update  
 
