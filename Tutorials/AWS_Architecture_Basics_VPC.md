@@ -13,7 +13,7 @@
     + Link it to an existing VPC
     + Choose a Availability Zone (AZ)
     + Choose a IPv4 CIDR (10.0.1.0/24)
-
+  
 4. Route Table (RT)
     + Create a new RT
         + Name it comprehensively (RT_Public_subnet)
