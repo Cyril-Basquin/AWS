@@ -9,7 +9,8 @@ Once you created an EC2 instance, to access it through the command prompt
 **For an ubuntu AMI:**  
 ```$ ssh -i key.pem ubuntu@xxx.xxx.xxx.xxx```
 
-where key.pem is the Access key of your instance. This command implies that your are located in the folder where you key is:  
+Note: key.pem is the Access key of your instance.  
+Note: This command implies that your are located in the folder where you key is:  
 ```$ cd c:\User\Username\Wher\ever\you\put\it```
 
 Otherwise you can use:  
