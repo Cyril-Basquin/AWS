@@ -42,7 +42,7 @@ NAT instance have to:
 Note: When you access to the FI, you are connected to it through the jump-box. If you deactivate the Jump-box, you lose the connection with the FI.
 
 
-### with the transfer tool of PuTTy (pscp), transfer the file key from local to the appropriate <b>file<b> in the remote ec2.  
+### with the transfer tool of PuTTy (pscp), transfer the file key from local to the appropriate <b>file</b> in the remote ec2.  
 **Note: xxx.xxx.xxx.xxx is the (elastic)IP of your EC2
 **Note: you can use the full path _c:\Users\Username\your\path_  
         or go in the folder where the key is and use the local path**
