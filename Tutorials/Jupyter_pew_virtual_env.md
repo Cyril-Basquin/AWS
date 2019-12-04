@@ -15,13 +15,12 @@ pip3 install ipykernel
 **Connect your env to jupyter**
 python3 -m ipykernel install --user --name=oasis
 
-**Install package in the virtual environnement**
-pip3 install pandas
-
-**Look wich package are installed**
-pip3 freeze
-
 **Connect the virtual env to Jupyter**
 
 **Write in a text file the list of your installade packages**
 pip3 freeze > CrevetteEnv.txt
+
+**Install all packages save in a text file**  
+pip3 install -r CrevetteEnv.txt  
+  
+**command line**
