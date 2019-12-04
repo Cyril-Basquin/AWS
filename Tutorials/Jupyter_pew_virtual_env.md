@@ -1,4 +1,4 @@
-How to create and manage Virtual environnement with pew
+### Create and manage Virtual environnement for Jupyter Notebook
 
 **Install pew**
 sudo pip3 install pew
