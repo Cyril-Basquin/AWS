@@ -3,7 +3,7 @@
 1. Create a VPC
     + Give it a comprehensive name (VPC_with_NAT_instance_JumpBox_FI)
     + Choose a IPv4 CIDR of at least 16 bytes (10.0.0.0/16)
-
+  
 2. Internet Gateway (IG)
     + Create an IG
     + Attach it to your VPC
@@ -13,7 +13,7 @@
     + Link it to an existing VPC
     + Choose a Availability Zone (AZ)
     + Choose a IPv4 CIDR (10.0.1.0/24)
-  
+
 4. Route Table (RT)
     + Create a new RT
         + Name it comprehensively (RT_Public_subnet)
