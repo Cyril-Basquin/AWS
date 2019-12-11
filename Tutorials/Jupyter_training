@@ -32,23 +32,19 @@ note: If an error message say that the conda Init is not activate, just relaunch
 Install Ipykernel to install packages
 ``conda install ipykernel``
 
-Access your virtual env
+Create your kernel
 ``ipython kernel install --user --name=nameofyourenv``
 
-#Here you are in your virtual environment
+# Install Git
+``sudo apt-get install git``
 
-#What you need to install
-#AT LEAST
-#Keras (don't mind the version)
-#Tensorflow 1.8
+# Clone the folder of leodsti
+``git clone https://github.com/Cyril-Basquin/AWS_Tutorials-1.git``
 
-conda install keras
-conda install opencv
+# Install all the package
+``pip install -r AWS_tutorials_1/MNIST/requirements.txt``
 
-# Git hub clone
-sudo apt-get install git
-git clone URL_of_the_thin_to_clone
-
+# Launch the notebook 00-mnist-cnn.ipynb using your created kernel
 
 
 #For the Application Server installation
