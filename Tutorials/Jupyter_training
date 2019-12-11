@@ -1,0 +1,59 @@
+
+
+Launch a ubuntu server with Jupyter using conda
+
+Download and install conda
+``wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+sudo bash Anaconda3-2019.03-Linux-x86_64.sh``
+
+Try
+``conda``
+
+If command is not found, change the PATH
+``export PATH=~/anaconda3/bin:$PATH``
+
+Start Jupyter notebook
+``jupyter notebook --ip=0.0.0.0 --no-browser``
+
+Go to your jupyter notebook (don't forget to allow port 8888 in SG)
+
+Create a virtual environnement:
+``conda create -n nameofyourenv python=3.6``
+
+I don't know what that do:
+"This needs to be done outside your virtual env
+``conda install nb_conda``
+
+Go into your virtual env
+``conda activate nameofyourenv``
+
+note: If an error message say that the conda Init is not activate, just relaunch a terminal
+
+Install Ipykernel to install packages
+``conda install ipykernel``
+
+Access your virtual env
+``ipython kernel install --user --name=nameofyourenv``
+
+#Here you are in your virtual environment
+
+#What you need to install
+#AT LEAST
+#Keras (don't mind the version)
+#Tensorflow 1.8
+
+conda install keras
+conda install opencv
+
+# Git hub clone
+sudo apt-get install git
+git clone URL_of_the_thin_to_clone
+
+
+
+#For the Application Server installation
+#I recommend using an Ubuntu AMI
+git clone https://github.com/leodsti/AWS_Tutorials.git
+cd AWS_Tutorials/MNIST/
+sudo apt-get update
+sudo apt-get install python3-pip.
