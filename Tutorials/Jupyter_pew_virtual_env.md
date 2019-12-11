@@ -1,6 +1,6 @@
 ### Create and manage Virtual environnement for Jupyter Notebook
 
-**Install pew**
+**Install pew**  
 ``sudo pip3 install pew``
 
 **Create a new environnement**  
@@ -32,4 +32,3 @@ python3 -m ipykernel install --user --name=oasis
 
 **Install all packages save in a text file**  
 ``pip3 install -r CrevetteEnv.txt``
-  
